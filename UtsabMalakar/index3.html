@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <div>
+        <svg id="svg-div" width="600" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+
+            <line x1="200" y1="0" x2="200" y2="200" stroke="black" stroke-width="3" />
+            <line x1="260" y1="0" x2="260" y2="200" stroke="black" stroke-width="3" />
+            <line x1="100" y1="70" x2="350" y2="70" stroke="black" stroke-width="3" />
+            <line x1="100" y1="130" x2="350" y2="130" stroke="black" stroke-width="3" />
+
+            <rect id="row0col0" x="150" y="20" width="40" height="40" style="fill:white" onclick="drawSymbol(evt)" />
+            <rect id="row0col1" x="210" y="20" width="40" height="40" style="fill:white" onclick="drawSymbol(evt)" />
+            <rect id="row0col2" x="270" y="20" width="40" height="40" style="fill:white" onclick="drawSymbol(evt)" />
+
+            <rect id="row1col0" x="150" y="80" width="40" height="40" style="fill:white" onclick="drawSymbol(evt)" />
+            <rect id="row1col1" x="210" y="80" width="40" height="40" style="fill:white" onclick="drawSymbol(evt)" />
+            <rect id="row1col2" x="270" y="80" width="40" height="40" style="fill:white" onclick="drawSymbol(evt)" />
+
+            <rect id="row2col0" x="150" y="140" width="40" height="40" style="fill:white" onclick="drawSymbol(evt)" />
+            <rect id="row2col1" x="210" y="140" width="40" height="40" style="fill:white" onclick="drawSymbol(evt)" />
+            <rect id="row2col2" x="270" y="140" width="40" height="40" style="fill:white" onclick="drawSymbol(evt)" />
+            <text id="playerTurn" x="450"  y="20">Player 1 turn</text>
+        </svg>
+        
+    </div>
+    <br>
+    <br>
+    <a href="index1.html">First</a>
+    <a href="index3.html">Next</a>
+    <a href="index2.html">Prev</a>
+    <h3>Change Notes</h3>
+    <ul>
+        <li>Created function to determine winner</li>
+    </ul>
+    <script src="js/script3.js"></script>
+</body>
+
+</html>
